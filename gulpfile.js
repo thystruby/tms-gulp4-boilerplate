@@ -5,7 +5,6 @@ const uglify = require('gulp-uglify-es').default;
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss = require('gulp-clean-css');
-const imagemin = require('gulp-imagemin');
 const del = require('del');
   
 function browsersync() {
@@ -39,7 +38,6 @@ function styles() {
   
 function images() {
   return src('app/images/**/*')
-  .pipe(imagemin())
   .pipe(dest('app/images/'))
 }
 
