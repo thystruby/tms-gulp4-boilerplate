@@ -36,15 +36,6 @@ function styles() {
   .pipe(browserSync.stream())
 }
   
-function images() {
-  return src('app/images/**/*')
-  .pipe(dest('app/images/'))
-}
-
-function cleanimg() {
-  return del('app/images/**/*', { force: true })
-}
-  
 function buildcopy() {
   return src([
     'app/css/**/*.min.css',
@@ -64,13 +55,10 @@ function startwatch() {
   watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
   watch('app/**/scss/**/*', styles);
   watch('app/**/*.html').on('change', browserSync.reload);
-  watch('app/images/**/*', images);
 }
   
 exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.styles = styles;
-exports.images = images;
-exports.cleanimg = cleanimg;
 exports.build = series(cleandist, styles, scripts, buildcopy);
 exports.default = parallel(styles, scripts, browsersync, startwatch);
