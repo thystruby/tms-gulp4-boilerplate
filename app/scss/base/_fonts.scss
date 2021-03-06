@@ -1,21 +1,55 @@
-$open-sans: '../fonts/open-sans';
+$montserrat: '../../fonts/montserrat';
 
-// Open Sans regular
 @font-face {
-	font-family: "Open Sans";
+	font-family: "Montserrat";
 	font-style: normal;
-	font-weight: 400;
-	src: url("#{$open-sans}/OpenSans-Regular.woff");
-	src: url("#{$open-sans}/OpenSans-Regular.woff2") format("woff2"),
-	url("#{$open-sans}/OpenSans-Regular.ttr") format("woff"),
+	font-weight: 300;
+	src: url("#{$montserrat}/Montserrat-Light.woff");
+	src: url("#{$montserrat}/Montserrat-Light.woff2") format("woff2"),
+	url("#{$montserrat}/Montserrat-Light.ttr") format("ttf"),
 }
 
-// Open Sans bold
 @font-face {
-	font-family: "Open Sans";
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	src: url("#{$montserrat}/Montserrat-Regular.woff");
+	src: url("#{$montserrat}/Montserrat-Regular.woff2") format("woff2"),
+	url("#{$montserrat}/Montserrat-Regular.ttr") format("ttf"),
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	src: url("#{$montserrat}/Montserrat-Medium.woff");
+	src: url("#{$montserrat}/Montserrat-Medium.woff2") format("woff2"),
+	url("#{$montserrat}/Montserrat-Medium.ttr") format("ttf"),
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	src: url("#{$montserrat}/Montserrat-SemiBold.woff");
+	src: url("#{$montserrat}/Montserrat-SemiBold.woff2") format("woff2"),
+	url("#{$montserrat}/Montserrat-SemiBold.ttr") format("ttf"),
+}
+
+@font-face {
+	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 700;
-	src: url("#{$open-sans}/OpenSans-Bold.woff");
-	src: url("#{$open-sans}/OpenSans-Bold.woff2") format("woff2"),
-	url("#{$open-sans}/OpenSans-Bold.ttr") format("woff"),
+	src: url("#{$montserrat}/Montserrat-Bold.woff");
+	src: url("#{$montserrat}/Montserrat-Bold.woff2") format("woff2"),
+	url("#{$montserrat}/Montserrat-Bold.ttr") format("ttf"),
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	src: url("#{$montserrat}/Montserrat-ExtraBold.woff");
+	src: url("#{$montserrat}/Montserrat-ExtraBold.woff2") format("woff2"),
+	url("#{$montserrat}/Montserrat-ExtraBold.ttr") format("ttf"),
 }
